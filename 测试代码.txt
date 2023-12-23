@@ -1,0 +1,54 @@
+1.
+#include "worker.h"
+#include "employee.h"
+#include "boss.h"
+#include "manager.h"
+
+
+2.
+Worker * worker = NULL;
+worker = new Employee(1, "张三", 1);
+worker->showInfo();
+delete worker;
+worker = new Manager(2, "李四", 2);
+worker->showInfo();
+delete worker;
+worker = new Boss(3, "王五", 3);
+worker->showInfo();
+delete worker;
+
+3.
+for (int i = 0;i < this->m_EmpNum;i++)
+{
+	cout << "职工编号:" << this->m_EmpArray[i]->m_Id
+		<< " 姓名:" << this->m_EmpArray[i]->m_Name
+		<< " 部门编号:" << this->m_EmpArray[i]->m_DeptId << endl;
+}
+
+4.
+cout << "职工人数为" << num << endl;
+
+//文件存在,但是为空
+cout << "error!文件为空!" << endl;
+
+//没有文件
+cout << "文件不存在!" << endl;
+
+5.
+cmpFile.txt
+
+6.
+case 3://删除离职员工
+{
+	//测试
+	int ret = wm.IsExist(1);
+	if (ret != -1)
+	{
+		cout << "y" << endl;
+	}
+	else
+	{
+		cout << "n" << endl;
+	}
+	break;
+}
