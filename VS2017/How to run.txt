@@ -1,0 +1,3 @@
+1.open VS2017
+2.open project
+3.debug
